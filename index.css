@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body,
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ea5d5d;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e25050' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgb(255, 241, 241);
+}
+
+.game h1 {
+  padding-bottom: 60px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.game h2 {
+  margin: 25px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.characters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  color: rgb(172, 14, 14);
+}
+
+.character {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.character span {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.character img {
+  width: 90px;
+  padding: 10px;
+  background-color: rgb(255, 241, 241);
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.44);
+  box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.44);
+}
+
+.score {
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.buttons button {
+  margin: 0px 7px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.44);
+  box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.44);
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.win {
+  border: 4px solid #8fff96;
+}
+
+.lose {
+  border: 4px solid #ff7e75;
+}
+
+.draw {
+  border: 4px solid #ffdc71;
+}
