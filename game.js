@@ -8,6 +8,10 @@ const resultDisplay = document.getElementById('resultDisplay');
 let scorePlayer = document.getElementById('scorePlayer');
 let scoreRobot = document.getElementById('scoreRobot');
 
+const sound_draw = new Audio(`./audio/draw.wav`);
+const sound_lose = new Audio(`./audio/lose.wav`);
+const sound_win = new Audio(`./audio/win.wav`);
+
 const ROCK = 'rock';
 const PAPER = 'paper';
 const SCISSORS = 'scissors';
@@ -42,15 +46,15 @@ function startGame(player) {
   switch (result) {
     case DRAW:
       resultDisplay.innerHTML = "NO POINT FOR NONE";
-      new Audio(`./audio/draw.wav`).play();
+      sound_draw.play()
       break;
     case LOSE:
       resultDisplay.innerHTML = "+1 POINT FOR ROBOT";
-      new Audio(`./audio/lose.wav`).play();
+      sound_lose.play()
       break;
     case WIN:
       resultDisplay.innerHTML = "+1 POINT FOR PLAYER";
-      new Audio(`./audio/win.wav`).play();
+      sound_win.play()
       break;
   }
   gameover = false;
